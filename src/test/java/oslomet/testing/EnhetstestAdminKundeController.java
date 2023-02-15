@@ -67,7 +67,7 @@ public class EnhetstestAdminKundeController {
     List<Kunde> resultat = kundeController.hentAlle();
 
     //assert
-    assertEquals(null, resultat);
+    assertNull(resultat);
   }
 
   @Test
@@ -95,7 +95,7 @@ public class EnhetstestAdminKundeController {
   }
 
   @Test
-  public void lagreKunde_ikkeLoggetInn() {
+  public void lagre_ikkeLoggetInn() {
     //arrange
     Kunde lagreKunde = new Kunde(
       "03039937332",
@@ -114,7 +114,7 @@ public class EnhetstestAdminKundeController {
     String resultat = kundeController.lagreKunde(lagreKunde);
 
     //assert
-    assertEquals(null, resultat);
+    assertEquals("Ikke logget inn", resultat);
   }
 
   @Test
@@ -161,7 +161,7 @@ public class EnhetstestAdminKundeController {
     String resultat = kundeController.endre(testKunde);
 
     //assert
-    assertEquals(null, resultat);
+    assertEquals("Ikke logget inn", resultat);
   }
 
   @Test
@@ -190,6 +190,6 @@ public class EnhetstestAdminKundeController {
     String resultat = kundeController.slett(personnr);
 
     //assert
-    assertNull(resultat);
+    assertEquals("Ikke logget inn", resultat);
   }
 }

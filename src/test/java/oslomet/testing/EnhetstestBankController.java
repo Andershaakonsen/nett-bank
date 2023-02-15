@@ -207,7 +207,7 @@ public class EnhetstestBankController {
     String result = bankController.registrerBetaling(null);
 
     // assert
-    assertEquals(null, result);
+    assertNull(result);
   }
 
   @Test
@@ -354,6 +354,6 @@ public class EnhetstestBankController {
     String resultat = bankController.endre(null);
 
     // Assert
-    assertEquals(null, resultat);
+    assertNull(resultat);
   }
 }
