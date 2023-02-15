@@ -79,9 +79,6 @@ public class EnhetstestSikkerhet {
 
   @Test
   public void loggInnAdmin_Feil() {
-    // Arrange
-    when(rep.sjekkLoggInn(anyString(), anyString())).thenReturn("Ugyldig");
-
     // Act
     String resultat = sjekk.loggInnAdmin("Admin", "Admin1");
 
