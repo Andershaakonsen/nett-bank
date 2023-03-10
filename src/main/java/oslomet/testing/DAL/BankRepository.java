@@ -30,6 +30,7 @@ public class BankRepository {
 
       return "OK";
     } catch (Exception e) {
+      System.out.println(e.getMessage());
       return "Feil";
     }
   }

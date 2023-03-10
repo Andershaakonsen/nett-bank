@@ -18,14 +18,6 @@ public class AdminKundeController {
   @Autowired
   private Sikkerhet sjekk;
 
-  @Autowired
-  private DataSource dataSource;
-
-  @GetMapping("/initDB")
-  public String initDB() {
-    return repository.initDB(dataSource);
-  }
-
   @GetMapping("/hentAlle")
   public List<Kunde> hentAlle() {
     String personnummer = sjekk.loggetInn();

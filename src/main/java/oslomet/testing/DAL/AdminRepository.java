@@ -18,22 +18,6 @@ public class AdminRepository {
   @Autowired
   private JdbcTemplate db;
 
-  public String initDB(DataSource dataSource) {
-    try {
-      ClassPathResource schema = new ClassPathResource("schema.sql");
-      ClassPathResource data = new ClassPathResource("data.sql");
-      ResourceDatabasePopulator populator = new ResourceDatabasePopulator(
-        schema,
-        data
-      );
-      populator.execute(dataSource);
-
-      return "OK";
-    } catch (Exception e) {
-      return "Feil";
-    }
-  }
-
   public List<Kunde> hentAlleKunder() {
     try {
       String sql =
