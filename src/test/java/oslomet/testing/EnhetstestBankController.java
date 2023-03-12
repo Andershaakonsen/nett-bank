@@ -37,6 +37,18 @@ public class EnhetstestBankController {
   private Sikkerhet sjekk;
 
   @Test
+  public void initDB() {
+   //arrange
+    when(repository.initDB(any())).thenReturn("OK");
+
+    //act
+    String resultat = bankController.initDB();
+
+    //assert
+    assertEquals(resultat, "OK");
+  }
+
+  @Test
   public void hentTransaksjoner_LoggetInn() {
     // arrange
     Konto enKonto = new Konto(
