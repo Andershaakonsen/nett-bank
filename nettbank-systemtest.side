@@ -1,0 +1,6621 @@
+{
+  "id": "c86b9087-013e-4096-b358-9b775409d32b",
+  "version": "2.0",
+  "name": "Nettbank",
+  "url": "http://localhost:8080/index.html",
+  "tests": [
+    {
+      "id": "22bffd60-6c84-48da-b945-7f640bcd0c31",
+      "name": "Kunde logg inn",
+      "commands": [
+        {
+          "id": "7ed72f47-f5a6-441f-99ef-8fa17deb315a",
+          "comment": "",
+          "command": "open",
+          "target": "http://localhost:8080/initDB",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "72b0248d-ea7d-4812-916e-5fef8d17726e",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "bd9b9a65-d27c-406e-89d2-416e7f27f443",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1920x1080",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7102d72e-d4ce-4044-a724-7878e36cfb67",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Logg inn",
+          "targets": [
+            [
+              "linkText=Logg inn",
+              "linkText"
+            ],
+            [
+              "css=.btn-success",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Logg inn')])[2]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//a[contains(@href, 'loggInn.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//div[2]/a",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d4c2fa29-76a0-4b2c-8f62-b4b4e7a0d409",
+          "comment": "",
+          "command": "click",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "9b3fe784-1549-4c6e-911b-9c4763ac01a6",
+          "comment": "",
+          "command": "type",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "01010110523"
+        },
+        {
+          "id": "1539cad3-9b61-453b-9900-fe1ff0b5d4ee",
+          "comment": "",
+          "command": "type",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "HeiHei"
+        },
+        {
+          "id": "29c73980-259e-41ee-9e96-5eb2f1394322",
+          "comment": "",
+          "command": "click",
+          "target": "id=loggInn",
+          "targets": [
+            [
+              "id=loggInn",
+              "id"
+            ],
+            [
+              "css=#loggInn",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='loggInn']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Logg inn')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "6269e1d9-7e65-4c84-a334-9f015b755522",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'22334412345')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "22334412345"
+        },
+        {
+          "id": "4f9a05ab-baab-4a64-8494-60ada9795d9a",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[2]/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'105020123456')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "105020123456\t"
+        },
+        {
+          "id": "a658c4c4-6e38-4f64-aef7-3f6f04e3f378",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[3]/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'105010123456')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "105010123456"
+        },
+        {
+          "id": "3c1bcf48-8ac4-4c7e-bf87-05df150cf0b9",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[2]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'Brukskonto')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Brukskonto"
+        },
+        {
+          "id": "7fb9634e-9f31-495b-bf06-7c2606f6cf00",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[2]/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td[2]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'Sparekonto')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Sparekonto"
+        },
+        {
+          "id": "2050aab4-50a3-4c80-afd7-02c5962e67c3",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[3]/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td[2]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'Lønnskonto')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Lønnskonto"
+        },
+        {
+          "id": "1c289a13-aa6f-4dc9-979b-bf23ccc0746b",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(3)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr/td[3]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[3]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'10234.50')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "10234.50"
+        },
+        {
+          "id": "8653e120-d41c-4708-a7f0-449532e491c1",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(3)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[2]/td[3]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td[3]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'100500.00')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "100500.00"
+        },
+        {
+          "id": "4a473e3e-01ec-4a2d-b67c-6eeccacb721d",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(3)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[3]/td[3]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td[3]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'720.00')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "720.00"
+        }
+      ]
+    },
+    {
+      "id": "e9115d8b-ab79-48cb-8e98-a757a860855a",
+      "name": "Kunde logg ut",
+      "commands": [
+        {
+          "id": "2e184569-fb31-43a6-a16c-b04b0c9fd128",
+          "comment": "",
+          "command": "open",
+          "target": "http://localhost:8080/initDB",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e2c90a86-93dd-4a10-a1db-b9a74da70a58",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2e6abaaf-6984-4087-b283-2f3189ed572c",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1920x1080",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d99149e8-672b-45c5-878a-9f29bb4664f8",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Logg inn",
+          "targets": [
+            [
+              "linkText=Logg inn",
+              "linkText"
+            ],
+            [
+              "css=.btn-success",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Logg inn')])[2]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//a[contains(@href, 'loggInn.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//div[2]/a",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "4bf2770f-f789-4f40-b283-0c97efadbf6b",
+          "comment": "",
+          "command": "click",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "4f7b4176-6b13-471a-85ba-70b70a217483",
+          "comment": "",
+          "command": "click",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "503a8c4f-66ad-422a-b72f-b14613c23251",
+          "comment": "",
+          "command": "type",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "01010110523"
+        },
+        {
+          "id": "3a46b69c-0a35-44ba-ad1e-fd2d398f48eb",
+          "comment": "",
+          "command": "click",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "a1f1eb4a-e706-4af3-bf1b-2a2271ac3458",
+          "comment": "",
+          "command": "type",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "HeiHei"
+        },
+        {
+          "id": "7c6316f3-76b8-4cbd-9263-79e3959a7bdb",
+          "comment": "",
+          "command": "click",
+          "target": "id=loggInn",
+          "targets": [
+            [
+              "id=loggInn",
+              "id"
+            ],
+            [
+              "css=#loggInn",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='loggInn']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Logg inn')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "ad1077e2-56fd-4a66-b8c8-b5fdd24623f1",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[2]/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'105020123456')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "105020123456\t"
+        },
+        {
+          "id": "42688153-efd7-4220-a24e-595246a3809a",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[3]/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'105010123456')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "105010123456"
+        },
+        {
+          "id": "14d174d0-a9fc-4129-be1c-d578509dd5b2",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[2]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'Brukskonto')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Brukskonto"
+        },
+        {
+          "id": "bcc4d681-de03-44ee-a6ff-ee7de78857d6",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[2]/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td[2]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'Sparekonto')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Sparekonto"
+        },
+        {
+          "id": "997ccec5-7c10-41b1-a99b-4bdcb65a5a21",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[3]/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td[2]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'Lønnskonto')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Lønnskonto"
+        },
+        {
+          "id": "ae3d7065-32a3-4331-ae46-1224a787e4c1",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(3)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[2]/td[3]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td[3]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'100500.00')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "100500.00"
+        },
+        {
+          "id": "4f17de78-5a19-43b7-b576-d00a95e32f34",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(3)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr/td[3]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[3]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'10234.50')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "10234.50"
+        },
+        {
+          "id": "56d96122-8c53-4cd3-8d71-5ff839252718",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(3)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[3]/td[3]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td[3]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'720.00')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "720.00"
+        },
+        {
+          "id": "8d574ebf-b8cb-4786-8a3f-a2b1520e2f7b",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'22334412345')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "22334412345"
+        },
+        {
+          "id": "6ba09638-e725-4394-83c4-761aaa9ec6f3",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Logg ut",
+          "targets": [
+            [
+              "linkText=Logg ut",
+              "linkText"
+            ],
+            [
+              "css=.navbar-right a",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Logg ut')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='navbar-main']/ul[2]/li/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, 'loggUt.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//ul[2]/li/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Logg ut')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "cbfb8b79-be81-4eb1-8300-06c8158712ce",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=p",
+          "targets": [
+            [
+              "css=p",
+              "css:finder"
+            ],
+            [
+              "xpath=//p",
+              "xpath:position"
+            ],
+            [
+              "xpath=//p[contains(.,'Vennligst oppgi personnummer og passord for å logge inn')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Vennligst oppgi personnummer og passord for å logge inn"
+        }
+      ]
+    },
+    {
+      "id": "9d4ad650-0f80-4ea9-97f4-8ed189926d9e",
+      "name": "Kunde se konto oversikt",
+      "commands": [
+        {
+          "id": "14725ed0-64fe-45ac-a43c-e89bab9c85f2",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4b1eaaf6-fa28-404b-a1be-7ee1106580f8",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1470x920",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3335d24f-771b-4dde-95d7-8b9baece0e04",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Logg inn",
+          "targets": [
+            [
+              "linkText=Logg inn",
+              "linkText"
+            ],
+            [
+              "css=.btn-success",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Logg inn')])[2]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//a[contains(@href, 'loggInn.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//div[2]/a",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "22d1566f-9d29-431f-b5dd-013f9f4e5ce6",
+          "comment": "",
+          "command": "click",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "f09c9328-1b02-4dfa-b982-2c73ef6fce76",
+          "comment": "",
+          "command": "type",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "01010110523"
+        },
+        {
+          "id": "2e6c4734-16c5-4f5d-bb35-27d0a89dca4f",
+          "comment": "",
+          "command": "click",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "c5ef7bd7-a418-4b2c-be04-8df4aaa49bf3",
+          "comment": "",
+          "command": "type",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "HeiHei"
+        },
+        {
+          "id": "6e30bc9d-4093-4e32-8938-c5605495dc4f",
+          "comment": "",
+          "command": "click",
+          "target": "id=loggInn",
+          "targets": [
+            [
+              "id=loggInn",
+              "id"
+            ],
+            [
+              "css=#loggInn",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='loggInn']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Logg inn')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "5b11489b-1c56-40f0-8925-346d75da6d35",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[2]/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'105020123456')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "105020123456\t"
+        },
+        {
+          "id": "54fafd48-8f0c-447d-a7da-875a084619c9",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[3]/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'105010123456')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "105010123456"
+        },
+        {
+          "id": "cfd9004a-d9cc-47e8-a975-f9b41e1ece9e",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[2]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'Brukskonto')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Brukskonto"
+        },
+        {
+          "id": "88fedce2-07ae-4471-aa69-d11123d5bb59",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[2]/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td[2]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'Sparekonto')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Sparekonto"
+        },
+        {
+          "id": "255c02b3-8b56-4017-8858-9f08b7cbd344",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[3]/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td[2]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'Lønnskonto')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Lønnskonto"
+        },
+        {
+          "id": "88e3f162-3fad-43d1-8c77-79091bbb194d",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(3)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr/td[3]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[3]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'10234.50')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "10234.50"
+        },
+        {
+          "id": "0e6c4e4f-5570-4560-8eed-60aec4adfdc0",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(3)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[2]/td[3]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td[3]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'100500.00')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "100500.00"
+        },
+        {
+          "id": "28400a60-5e01-49c8-966f-f16e38bd5370",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(3)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[3]/td[3]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td[3]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'720.00')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "720.00"
+        },
+        {
+          "id": "df8240ee-84be-4bd7-ac5a-fea3dde8813c",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'22334412345')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "22334412345"
+        },
+        {
+          "id": "cee69722-9307-4eb2-8b5a-0ab61f8a887a",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Saldo",
+          "targets": [
+            [
+              "linkText=Saldo",
+              "linkText"
+            ],
+            [
+              "css=.nav:nth-child(1) > li:nth-child(1) > a",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Saldo')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='navbar-main']/ul/li/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, 'saldo.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Saldo')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "14b54a0a-9ac2-4e43-91ed-bdb660afe62b",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[4]/div",
+              "xpath:position"
+            ]
+          ],
+          "value": "Saldo for personnummer 01010110523"
+        },
+        {
+          "id": "dfec2e71-4255-4fb3-9b72-d67b75a92ba5",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'22334412345')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "22334412345"
+        },
+        {
+          "id": "14e895f5-e1bc-4bba-af41-c0b0a521d3e4",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[2]/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'105020123456')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "105020123456"
+        },
+        {
+          "id": "4a6bf7d5-00ec-486e-acf0-89e88a41e67a",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[3]/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'105010123456')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "105010123456"
+        },
+        {
+          "id": "c4003fa1-58aa-48c5-9158-65db836c7abd",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[2]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'Brukskonto')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Brukskonto"
+        },
+        {
+          "id": "9cad515c-651a-4086-93fa-abe96adb3f7c",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[2]/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td[2]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'Sparekonto')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Sparekonto"
+        },
+        {
+          "id": "8f5b71e9-2a59-4efb-9fef-911892dbe458",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[3]/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td[2]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'Lønnskonto')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Lønnskonto"
+        },
+        {
+          "id": "d4af0b81-cb34-4afe-b299-ecefd943f342",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(3)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr/td[3]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[3]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'10234.50')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "10234.50"
+        },
+        {
+          "id": "0ec76cc9-71d7-4850-bdf1-a1a2f0c5a1d3",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(3)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[2]/td[3]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td[3]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'100500.00')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "100500.00"
+        },
+        {
+          "id": "b136f553-f9dc-4115-a83e-13266c7aa1b2",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(3)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listSaldi']/table/tbody/tr[3]/td[3]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td[3]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'720.00')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "720.00"
+        }
+      ]
+    },
+    {
+      "id": "a08b40a1-bbfa-4492-add4-2dfd13806af5",
+      "name": "Kunde registrer betaling",
+      "commands": [
+        {
+          "id": "8bde7a9f-d5f8-41dd-97f5-e91bfdb748d7",
+          "comment": "",
+          "command": "open",
+          "target": "http://localhost:8080/initDB",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "275ced49-5c82-492e-bf3b-d6e1fbc010df",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "79ae9e9b-9959-42e6-b7c2-a336454847d2",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1920x1080",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a00f7c34-c3e6-4121-b443-eb9ebd647f46",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Logg inn",
+          "targets": [
+            [
+              "linkText=Logg inn",
+              "linkText"
+            ],
+            [
+              "css=.btn-success",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Logg inn')])[2]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//a[contains(@href, 'loggInn.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//div[2]/a",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "9044b172-20bc-4656-b9c5-7ecda0bc5a5a",
+          "comment": "",
+          "command": "click",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "98d3e552-7ce8-42e2-823d-1c972e277227",
+          "comment": "",
+          "command": "click",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "4bff5b51-bf9b-4fa7-aff6-74852f7b8fc8",
+          "comment": "",
+          "command": "doubleClick",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d7947243-59ab-445f-b4d9-bd9cf3d01648",
+          "comment": "",
+          "command": "type",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "01010110523"
+        },
+        {
+          "id": "da4cca3c-cce0-4092-8a0e-72df977636a3",
+          "comment": "",
+          "command": "click",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "4d04931a-cc7b-4dc0-a818-dbe8a2557c2c",
+          "comment": "",
+          "command": "type",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "HeiHei"
+        },
+        {
+          "id": "b0cf3a59-d37a-4458-bf99-aa105033a9d8",
+          "comment": "",
+          "command": "click",
+          "target": "id=loggInn",
+          "targets": [
+            [
+              "id=loggInn",
+              "id"
+            ],
+            [
+              "css=#loggInn",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='loggInn']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Logg inn')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "f6fd86e0-baa8-4dbe-8566-cc187fb79108",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Register betaling",
+          "targets": [
+            [
+              "linkText=Register betaling",
+              "linkText"
+            ],
+            [
+              "css=li:nth-child(2) > a",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Register betaling')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='navbar-main']/ul/li[2]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, 'registerBetaling.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li[2]/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Register betaling')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "77a7ce72-1ddb-42cf-b45c-6879384a89e2",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=p",
+          "targets": [
+            [
+              "css=p",
+              "css:finder"
+            ],
+            [
+              "xpath=//p",
+              "xpath:position"
+            ],
+            [
+              "xpath=//p[contains(.,'Velg konto og andre data for å registrere en regning')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Velg konto og andre data for å registrere en regning"
+        },
+        {
+          "id": "cd9158dc-7df5-4df0-ba54-a8ba2f206daa",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [
+            [
+              "css=h2",
+              "css:finder"
+            ],
+            [
+              "xpath=//h2",
+              "xpath:position"
+            ],
+            [
+              "xpath=//h2[contains(.,'Registrer betalinger')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Registrer betalinger"
+        },
+        {
+          "id": "945b6849-4850-4272-b6c0-fbd506f58e8d",
+          "comment": "",
+          "command": "click",
+          "target": "id=tilKonto",
+          "targets": [
+            [
+              "id=tilKonto",
+              "id"
+            ],
+            [
+              "css=#tilKonto",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='tilKonto']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "89ca3527-d8db-4303-80a7-08db581aa9e3",
+          "comment": "",
+          "command": "type",
+          "target": "id=tilKonto",
+          "targets": [
+            [
+              "id=tilKonto",
+              "id"
+            ],
+            [
+              "css=#tilKonto",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='tilKonto']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "11111111111"
+        },
+        {
+          "id": "37b0b3ed-73b3-40c3-b67e-25a395be49d0",
+          "comment": "",
+          "command": "click",
+          "target": "id=dato",
+          "targets": [
+            [
+              "id=dato",
+              "id"
+            ],
+            [
+              "css=#dato",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='dato']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[3]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "aacf1433-9005-4c1a-a788-ccdff067e919",
+          "comment": "",
+          "command": "type",
+          "target": "id=dato",
+          "targets": [
+            [
+              "id=dato",
+              "id"
+            ],
+            [
+              "css=#dato",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='dato']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[3]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "2023-05-05"
+        },
+        {
+          "id": "a4a89768-42a5-4931-a537-99b9bec8513a",
+          "comment": "",
+          "command": "type",
+          "target": "id=belop",
+          "targets": [
+            [
+              "id=belop",
+              "id"
+            ],
+            [
+              "css=#belop",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='belop']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[4]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "200"
+        },
+        {
+          "id": "ed8221d9-a11a-482b-93b4-087bcffd127c",
+          "comment": "",
+          "command": "type",
+          "target": "id=melding",
+          "targets": [
+            [
+              "id=melding",
+              "id"
+            ],
+            [
+              "css=#melding",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='melding']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[5]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "HeiHei"
+        },
+        {
+          "id": "3a3839cc-8b2d-4273-bf30-a612464a65ba",
+          "comment": "",
+          "command": "click",
+          "target": "id=regBetaling",
+          "targets": [
+            [
+              "id=regBetaling",
+              "id"
+            ],
+            [
+              "css=#regBetaling",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='regBetaling']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Registrer betaling')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "439dc28f-e275-4bb8-b263-aae516af69bc",
+          "comment": "",
+          "command": "assert",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "89abad54-d854-40a7-8400-ea932ac81d15",
+      "name": "Kunde se registrerte betalinger",
+      "commands": [
+        {
+          "id": "c6b0f45e-3367-43c4-8b70-41f048b4405c",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c0c5057a-de11-425c-9476-dab0e0bbfe81",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1470x920",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "9e600ad1-26da-4801-9ae2-49a49c22d1b3",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Logg inn",
+          "targets": [
+            [
+              "linkText=Logg inn",
+              "linkText"
+            ],
+            [
+              "css=.btn-success",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Logg inn')])[2]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//a[contains(@href, 'loggInn.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//div[2]/a",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "60127f7c-0b9d-4ff6-bb2b-638184e208c6",
+          "comment": "",
+          "command": "click",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "657b711b-9794-42af-8ef6-30e0aca12b3f",
+          "comment": "",
+          "command": "type",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "01010110523"
+        },
+        {
+          "id": "e62d3f44-ed7a-4a44-bb71-759b8885e19d",
+          "comment": "",
+          "command": "click",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "82c008d5-16c8-4bb1-8c21-ae1669f7a5f5",
+          "comment": "",
+          "command": "type",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "HeiHei"
+        },
+        {
+          "id": "3922a45e-257f-4a8f-925d-0ff3b8625d95",
+          "comment": "",
+          "command": "click",
+          "target": "id=loggInn",
+          "targets": [
+            [
+              "id=loggInn",
+              "id"
+            ],
+            [
+              "css=#loggInn",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='loggInn']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Logg inn')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "8dbc3a67-62cf-4ced-abc3-9c179b6c31f6",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Utfør betalinger",
+          "targets": [
+            [
+              "linkText=Utfør betalinger",
+              "linkText"
+            ],
+            [
+              "css=li:nth-child(3) > a",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Utfør betalinger')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='navbar-main']/ul/li[3]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, 'utforBetalinger.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li[3]/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Utfør betalinger')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "fac240c3-0337-481e-b152-cb94f990f3af",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [
+            [
+              "css=h2",
+              "css:finder"
+            ],
+            [
+              "xpath=//h2",
+              "xpath:position"
+            ],
+            [
+              "xpath=//h2[contains(.,'Utfør betalinger')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Utfør betalinger"
+        },
+        {
+          "id": "16f237fc-2c98-408e-b568-93a21c3d4ffa",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'105010123456')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "105010123456"
+        },
+        {
+          "id": "ef237db9-3d2b-4a9f-a385-8a13bf3582cf",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr[2]/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td",
+              "xpath:position"
+            ]
+          ],
+          "value": "105010123456"
+        },
+        {
+          "id": "6c15055b-6a76-4e5e-a3d6-e7d97ddf943e",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr[3]/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td",
+              "xpath:position"
+            ]
+          ],
+          "value": "105010123456"
+        },
+        {
+          "id": "5100511f-f37c-44d2-b8ed-eef0df2e5e20",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[2]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'20102012345')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "20102012345"
+        },
+        {
+          "id": "b01b79ec-435d-49a6-8c65-6998926f39d3",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr[2]/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td[2]",
+              "xpath:position"
+            ]
+          ],
+          "value": "20102012345"
+        },
+        {
+          "id": "92baa53a-14a4-41b3-9aab-53266212c34c",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr[3]/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td[2]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'20102012347')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "20102012347"
+        },
+        {
+          "id": "b38fc992-6d4e-44c5-ac7d-45684da071e8",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(3)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr/td[3]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[3]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'2015-03-15')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "2015-03-15"
+        },
+        {
+          "id": "c7efc1fd-18d4-497f-82af-1e718eb1592d",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(3)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr[2]/td[3]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td[3]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'2015-03-20')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "2015-03-20"
+        },
+        {
+          "id": "b0d84605-2caf-42ad-ae0c-f5fc29a8864b",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(3)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr[3]/td[3]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td[3]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'2015-03-30')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "2015-03-30"
+        },
+        {
+          "id": "221cd21f-3b4f-4e48-8a81-a40b88064280",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(4)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(4)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr/td[4]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[4]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'100.50')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "100.50"
+        },
+        {
+          "id": "4d4a197e-93b7-4f49-a824-4eecdb1bce6b",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(4)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(4)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr[2]/td[4]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td[4]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'400.40')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "400.40\t"
+        },
+        {
+          "id": "cd635332-e732-429c-ac50-c3f375ed7296",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(4)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(4)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr[3]/td[4]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td[4]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'5000.50')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "5000.50"
+        },
+        {
+          "id": "1bcb7598-3409-4bfe-8dce-61d4ad8d7e97",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(5)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(5)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr/td[5]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[5]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'Fjordkraft')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Fjordkraft"
+        },
+        {
+          "id": "49fe9fff-de15-40dd-b31a-fe21fd54d8e4",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(5)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(5)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr[2]/td[5]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td[5]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'Skagen')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Skagen"
+        },
+        {
+          "id": "328e88dd-f855-4e08-b402-84063115455a",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(5)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(5)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr[3]/td[5]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td[5]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'Husleie')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Husleie"
+        }
+      ]
+    },
+    {
+      "id": "67974ff7-80c9-41ee-9c87-91d563872821",
+      "name": "Kunde utfør betaling",
+      "commands": [
+        {
+          "id": "3496526e-0fb9-432c-96a3-659b45051525",
+          "comment": "",
+          "command": "open",
+          "target": "http://localhost:8080/initDB",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "96f6e381-cf33-47bd-a571-d9006914461a",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5b442932-ea47-4220-bca1-f94dfd251465",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1470x920",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3c838a05-463b-4ea9-80ae-4ab6c0f3f045",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Logg inn",
+          "targets": [
+            [
+              "linkText=Logg inn",
+              "linkText"
+            ],
+            [
+              "css=.btn-success",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Logg inn')])[2]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//a[contains(@href, 'loggInn.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//div[2]/a",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "f813a5b2-2c57-40d5-baaf-7fe018a15392",
+          "comment": "",
+          "command": "click",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "db905063-2e7b-439d-94cc-447ab3758b00",
+          "comment": "",
+          "command": "type",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "01010110523"
+        },
+        {
+          "id": "53270d4d-4bc2-474d-a59b-739503e69157",
+          "comment": "",
+          "command": "click",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "bbdcf7ed-7012-441e-a54c-34908736e965",
+          "comment": "",
+          "command": "type",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "HeiHei"
+        },
+        {
+          "id": "e9473362-3f5f-4f52-a631-368bc91a52b3",
+          "comment": "",
+          "command": "click",
+          "target": "id=loggInn",
+          "targets": [
+            [
+              "id=loggInn",
+              "id"
+            ],
+            [
+              "css=#loggInn",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='loggInn']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Logg inn')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "917bfbc3-2dfa-4911-8084-04e30b60dfc6",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Utfør betalinger",
+          "targets": [
+            [
+              "linkText=Utfør betalinger",
+              "linkText"
+            ],
+            [
+              "css=li:nth-child(3) > a",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Utfør betalinger')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='navbar-main']/ul/li[3]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, 'utforBetalinger.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li[3]/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Utfør betalinger')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "5776ab91-533d-45dc-96a0-167124f97493",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr[2]/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td[2]",
+              "xpath:position"
+            ]
+          ],
+          "value": "20102012345"
+        },
+        {
+          "id": "53116d3e-0f19-4192-a67b-c4c4a358683f",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[2]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'20102012345')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "20102012345"
+        },
+        {
+          "id": "54cf2aa5-b39d-47f0-95f7-f5041529ec74",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr[2]/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td",
+              "xpath:position"
+            ]
+          ],
+          "value": "105010123456"
+        },
+        {
+          "id": "2251d81c-7c11-4333-a5a3-1b440f317d52",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'105010123456')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "105010123456"
+        },
+        {
+          "id": "a4447f86-f68a-4804-b16b-fb29fb707e6f",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=h2",
+          "targets": [
+            [
+              "css=h2",
+              "css:finder"
+            ],
+            [
+              "xpath=//h2",
+              "xpath:position"
+            ],
+            [
+              "xpath=//h2[contains(.,'Utfør betalinger')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Utfør betalinger"
+        },
+        {
+          "id": "36bb0924-823d-43f0-a605-f8c1b881a526",
+          "comment": "",
+          "command": "click",
+          "target": "css=tr:nth-child(3) .btn",
+          "targets": [
+            [
+              "css=tr:nth-child(3) .btn",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listBetalinger']/table/tbody/tr[3]/td[6]/button",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td[6]/button",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "b2dc6db7-1b80-46b9-a44a-0a0ebbb36c0c",
+      "name": "Kunde se transaksjoner",
+      "commands": [
+        {
+          "id": "a61386d3-7cb2-4e16-8936-15965f6ca336",
+          "comment": "",
+          "command": "open",
+          "target": "http://localhost:8080/initDB",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "29a301a4-62a3-467c-873d-87f27abf4200",
+          "comment": "",
+          "command": "open",
+          "target": "http://localhost:8080/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2b70f268-d479-4263-b60e-fcdd326927ef",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1470x920",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "bdb01cc0-273d-4b0f-ad4b-f8457ceb0e60",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Logg inn",
+          "targets": [
+            [
+              "linkText=Logg inn",
+              "linkText"
+            ],
+            [
+              "css=.btn-success",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Logg inn')])[2]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//a[contains(@href, 'loggInn.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//div[2]/a",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "5870da2a-b61e-43d5-996b-f651d3eceefe",
+          "comment": "",
+          "command": "click",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "204af975-6fda-4214-92a4-f4b7de6eb8f6",
+          "comment": "",
+          "command": "type",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "01010110523"
+        },
+        {
+          "id": "85d5a416-a742-4045-a5b0-309160c078ff",
+          "comment": "",
+          "command": "click",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "e4809661-5d50-4abc-b473-e0a34b99ea02",
+          "comment": "",
+          "command": "type",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "HeiHei"
+        },
+        {
+          "id": "af46e101-2753-4771-825b-76684074f598",
+          "comment": "",
+          "command": "click",
+          "target": "id=loggInn",
+          "targets": [
+            [
+              "id=loggInn",
+              "id"
+            ],
+            [
+              "css=#loggInn",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='loggInn']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Logg inn')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "a677c70b-57e7-4703-8202-e665ea7ea7c5",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Transaksjoner",
+          "targets": [
+            [
+              "linkText=Transaksjoner",
+              "linkText"
+            ],
+            [
+              "css=li:nth-child(4) > a",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Transaksjoner')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='navbar-main']/ul/li[4]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, 'transaksjon.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li[4]/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Transaksjoner')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "43283f60-38a9-4ad4-96f2-1d6a7900a481",
+          "comment": "",
+          "command": "click",
+          "target": "id=kontoNr",
+          "targets": [
+            [
+              "id=kontoNr",
+              "id"
+            ],
+            [
+              "css=#kontoNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//select[@id='kontoNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='selekt']/select",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//select",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "74e7a4e3-cd05-4eab-8cec-a0756bde2227",
+          "comment": "",
+          "command": "select",
+          "target": "id=kontoNr",
+          "targets": [],
+          "value": "label=105010123456"
+        },
+        {
+          "id": "50fbb44d-6bc7-4272-8d3b-a0ce3ef7c416",
+          "comment": "",
+          "command": "click",
+          "target": "id=sok",
+          "targets": [
+            [
+              "id=sok",
+              "id"
+            ],
+            [
+              "css=#sok",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='sok']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Søk')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "24cc6d7e-1b36-430a-b769-197a49f6fc15",
+          "comment": "",
+          "command": "mouseOver",
+          "target": "id=sok",
+          "targets": [
+            [
+              "id=sok",
+              "id"
+            ],
+            [
+              "css=#sok",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='sok']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Søk')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "fd651817-5e0a-4d75-bf04-326d5775b1ec",
+          "comment": "",
+          "command": "mouseOut",
+          "target": "id=sok",
+          "targets": [
+            [
+              "id=sok",
+              "id"
+            ],
+            [
+              "css=#sok",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='sok']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Søk')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "9d831047-305f-4c53-b559-66ff59a269fe",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listTransaksjoner']/table/tbody/tr/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'2012-12-12')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "2012-12-12"
+        },
+        {
+          "id": "5b788056-cf3a-43ff-a205-e0b6d07f1a84",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listTransaksjoner']/table/tbody/tr[2]/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td",
+              "xpath:position"
+            ]
+          ],
+          "value": "2012-12-12"
+        },
+        {
+          "id": "064bb598-8e86-4c37-9323-0e52f5c6ae4b",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(1)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listTransaksjoner']/table/tbody/tr[3]/td",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td",
+              "xpath:position"
+            ]
+          ],
+          "value": "2012-12-12"
+        },
+        {
+          "id": "f3bffb64-c9b6-4ce5-89d7-0f52e115f39c",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listTransaksjoner']/table/tbody/tr/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[2]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'345678908')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "345678908"
+        },
+        {
+          "id": "d572a425-92cc-4316-85b7-2dbd2b6df98d",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listTransaksjoner']/table/tbody/tr[2]/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td[2]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'234534678')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "234534678"
+        },
+        {
+          "id": "72439e32-6bd9-4f27-a4cb-fdbaded2cb0f",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(2)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(2)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listTransaksjoner']/table/tbody/tr[3]/td[2]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td[2]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'1234254365')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "1234254365"
+        },
+        {
+          "id": "70bc0317-08cb-4aa1-8fe3-b03e801abfd8",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(3)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listTransaksjoner']/table/tbody/tr/td[3]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[3]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'3000')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "3000"
+        },
+        {
+          "id": "1390993e-82be-4441-ad75-1e3727a9a4f8",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(3)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listTransaksjoner']/table/tbody/tr[2]/td[3]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td[3]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'15')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "15"
+        },
+        {
+          "id": "4946d75b-619e-492a-8828-c8fbf385a3b0",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(3)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(3)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listTransaksjoner']/table/tbody/tr[3]/td[3]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td[3]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'125')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "125"
+        },
+        {
+          "id": "2dedfeae-817c-41da-8712-62d11dcb5dd5",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(1) > td:nth-child(4)",
+          "targets": [
+            [
+              "css=tr:nth-child(1) > td:nth-child(4)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listTransaksjoner']/table/tbody/tr/td[4]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[4]",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "542a76cb-d813-49db-8d8e-ed50e6f1914e",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(2) > td:nth-child(4)",
+          "targets": [
+            [
+              "css=tr:nth-child(2) > td:nth-child(4)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listTransaksjoner']/table/tbody/tr[2]/td[4]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[2]/td[4]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'Hei')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Hei"
+        },
+        {
+          "id": "9393717e-9178-4966-87e2-e716fe777a69",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=tr:nth-child(3) > td:nth-child(4)",
+          "targets": [
+            [
+              "css=tr:nth-child(3) > td:nth-child(4)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='listTransaksjoner']/table/tbody/tr[3]/td[4]",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tr[3]/td[4]",
+              "xpath:position"
+            ],
+            [
+              "xpath=//td[contains(.,'Hopp')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": "Hopp"
+        }
+      ]
+    },
+    {
+      "id": "4d48ff73-339a-480a-9a5f-df4b4fb3589f",
+      "name": "Kunde se og endre kundeinfo",
+      "commands": [
+        {
+          "id": "c56f058b-6998-4b5b-a26d-4163387b4b8f",
+          "comment": "",
+          "command": "open",
+          "target": "http://localhost:8080/initDB",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e632cedf-833a-47d2-9706-4e9e65a5f07e",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f037ac6c-83ea-4b7e-8ee3-057047307346",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1920x1080",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d294b9ba-6222-4ed2-9cab-6bc26262ee2e",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Logg inn",
+          "targets": [
+            [
+              "linkText=Logg inn",
+              "linkText"
+            ],
+            [
+              "css=.btn-success",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Logg inn')])[2]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//a[contains(@href, 'loggInn.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//div[2]/a",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d99c3c17-3635-43a3-8877-099f6f3a9232",
+          "comment": "",
+          "command": "click",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "e310413c-5a71-4801-8a68-b3996767696b",
+          "comment": "",
+          "command": "type",
+          "target": "id=personNr",
+          "targets": [
+            [
+              "id=personNr",
+              "id"
+            ],
+            [
+              "css=#personNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "01010110523"
+        },
+        {
+          "id": "4ef98078-aee8-4cfa-8bf8-84efef61cadd",
+          "comment": "",
+          "command": "click",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "72858976-c557-46d5-8bc4-7d35ee1ffd0f",
+          "comment": "",
+          "command": "type",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "HeiHei"
+        },
+        {
+          "id": "f7ad3c1c-ddf0-4391-ac03-30f8c899b710",
+          "comment": "",
+          "command": "click",
+          "target": "id=loggInn",
+          "targets": [
+            [
+              "id=loggInn",
+              "id"
+            ],
+            [
+              "css=#loggInn",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='loggInn']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Logg inn')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "2149e5fe-0598-43b9-a169-fa13cbe88f09",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Kunde-info",
+          "targets": [
+            [
+              "linkText=Kunde-info",
+              "linkText"
+            ],
+            [
+              "css=li:nth-child(5) > a",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Kunde-info')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='navbar-main']/ul/li[5]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, 'kundeInfo.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li[5]/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Kunde-info')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "7ecc90b8-a32d-4c1a-8181-d8bd58b5998d",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=passord",
+          "targets": [],
+          "value": "HeiHei"
+        },
+        {
+          "id": "d4e54840-05e1-44a8-bb7e-c21852c05849",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=telefonnr",
+          "targets": [],
+          "value": "22224444"
+        },
+        {
+          "id": "ebb8bc79-530f-4b1e-a06c-7714bffb6eab",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=poststed",
+          "targets": [],
+          "value": "Asker"
+        },
+        {
+          "id": "51f11a73-7a31-494c-a5d5-ea62118bb842",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=postnr",
+          "targets": [],
+          "value": "3270"
+        },
+        {
+          "id": "cb325cf2-7c34-4371-92bb-1e4ad5890cfb",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=adresse",
+          "targets": [],
+          "value": "Askerveien 22"
+        },
+        {
+          "id": "7b63072b-b7bc-4911-8f8f-2aa7787db064",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=etternavn",
+          "targets": [],
+          "value": "Jensen"
+        },
+        {
+          "id": "7447eb04-f392-43cc-b530-705590aec1a5",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=fornavn",
+          "targets": [],
+          "value": "Lene"
+        },
+        {
+          "id": "016653f8-cb46-47c0-acf6-55020136c4d2",
+          "comment": "",
+          "command": "assertText",
+          "target": "id=heading",
+          "targets": [],
+          "value": "Kundeinformasjon for personnummer 01010110523"
+        },
+        {
+          "id": "d3b26886-ae33-4b78-9a05-5963fc0e832c",
+          "comment": "",
+          "command": "click",
+          "target": "id=fornavn",
+          "targets": [
+            [
+              "id=fornavn",
+              "id"
+            ],
+            [
+              "css=#fornavn",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='fornavn']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "344b201b-a14d-4616-9136-e5a233815680",
+          "comment": "",
+          "command": "type",
+          "target": "id=fornavn",
+          "targets": [
+            [
+              "id=fornavn",
+              "id"
+            ],
+            [
+              "css=#fornavn",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='fornavn']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Lene1"
+        },
+        {
+          "id": "bd39f0f7-577a-446f-86b2-0b740e5773ee",
+          "comment": "",
+          "command": "click",
+          "target": "id=endre",
+          "targets": [
+            [
+              "id=endre",
+              "id"
+            ],
+            [
+              "css=#endre",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='endre']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Endre info')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "b76db198-e9fb-478a-8242-877ed0aea686",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=fornavn",
+          "targets": [],
+          "value": "Lene1"
+        }
+      ]
+    },
+    {
+      "id": "f2d5d808-db0d-417f-be81-ea5ac27b3118",
+      "name": "Logg Inn Admin",
+      "commands": [
+        {
+          "id": "616f6c64-0d95-493e-a8fb-c449f246217c",
+          "comment": "",
+          "command": "open",
+          "target": "/initDB",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c386ef4f-75d2-4525-9ff4-3f3a139f7222",
+          "comment": "",
+          "command": "pause",
+          "target": "1000",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c00dc686-29b5-45d2-9065-b8ec04c50515",
+          "comment": "",
+          "command": "open",
+          "target": "/index.html",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0ab0c3f7-9749-411f-a249-d7744910da20",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Logg inn Admin",
+          "targets": [
+            [
+              "linkText=Logg inn Admin",
+              "linkText"
+            ],
+            [
+              "css=.btn-default",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Logg inn Admin')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//a[contains(@href, 'loggInnAdmin.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//body/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Logg inn Admin')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "bf6f8a24-2804-4913-b1c2-6decbdcdfac5",
+          "comment": "",
+          "command": "click",
+          "target": "id=bruker",
+          "targets": [
+            [
+              "id=bruker",
+              "id"
+            ],
+            [
+              "css=#bruker",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='bruker']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "1619ceee-6e39-4d5f-9e1a-5f422ecc18ab",
+          "comment": "",
+          "command": "type",
+          "target": "id=bruker",
+          "targets": [
+            [
+              "id=bruker",
+              "id"
+            ],
+            [
+              "css=#bruker",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='bruker']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Admin"
+        },
+        {
+          "id": "715c3765-33c3-493e-8810-40aca6679a92",
+          "comment": "",
+          "command": "type",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Admin"
+        },
+        {
+          "id": "23f34649-e247-42ac-9010-39d4a12cc65a",
+          "comment": "",
+          "command": "click",
+          "target": "id=loggInn",
+          "targets": [
+            [
+              "id=loggInn",
+              "id"
+            ],
+            [
+              "css=#loggInn",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='loggInn']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//form/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "e73eae25-37ff-4f0a-a1c2-fcca1f709c20",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=fornavn1",
+          "targets": [
+            [
+              "id=fornavn1",
+              "id"
+            ],
+            [
+              "css=#fornavn1",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='fornavn1']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='listKunde']/table/tbody/tr/td[2]/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[2]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Lene"
+        }
+      ]
+    },
+    {
+      "id": "658027e8-c4d8-4e87-a53c-beb1dc461f27",
+      "name": "Logg Ut Admin",
+      "commands": [
+        {
+          "id": "0ed8ab8f-eeb0-4923-9640-89c97ae67fe1",
+          "comment": "",
+          "command": "open",
+          "target": "/initDB",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "cabbb040-a634-4f59-a750-324bf8ec5385",
+          "comment": "",
+          "command": "pause",
+          "target": "1000",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "69b17847-7f6c-45c5-a38e-ae8c1cec2464",
+          "comment": "",
+          "command": "open",
+          "target": "/index.html",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0ab26f3e-6ae3-4e23-835e-cca7616da732",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Logg inn Admin",
+          "targets": [
+            [
+              "linkText=Logg inn Admin",
+              "linkText"
+            ],
+            [
+              "css=.btn-default",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Logg inn Admin')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//a[contains(@href, 'loggInnAdmin.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//body/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Logg inn Admin')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "17b43a83-6f61-4f48-8d09-d765c0190d36",
+          "comment": "",
+          "command": "click",
+          "target": "id=bruker",
+          "targets": [
+            [
+              "id=bruker",
+              "id"
+            ],
+            [
+              "css=#bruker",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='bruker']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "e4872b20-67f0-4182-a95b-2612d68806e1",
+          "comment": "",
+          "command": "type",
+          "target": "id=bruker",
+          "targets": [
+            [
+              "id=bruker",
+              "id"
+            ],
+            [
+              "css=#bruker",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='bruker']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Admin"
+        },
+        {
+          "id": "309c1961-691b-47ac-9526-0fa0138c11cb",
+          "comment": "",
+          "command": "type",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Admin"
+        },
+        {
+          "id": "86537fad-c574-4068-818f-ff0eaee61fce",
+          "comment": "",
+          "command": "click",
+          "target": "id=loggInn",
+          "targets": [
+            [
+              "id=loggInn",
+              "id"
+            ],
+            [
+              "css=#loggInn",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='loggInn']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//form/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "870f263e-7603-4720-adf3-38a9df43cf11",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=fornavn1",
+          "targets": [
+            [
+              "id=fornavn1",
+              "id"
+            ],
+            [
+              "css=#fornavn1",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='fornavn1']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='listKunde']/table/tbody/tr/td[2]/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[2]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Lene"
+        },
+        {
+          "id": "fccbc548-6570-4126-aaf2-bb16546ed751",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Logg ut",
+          "targets": [
+            [
+              "linkText=Logg ut",
+              "linkText"
+            ],
+            [
+              "css=.navbar-right a",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Logg ut')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='navbar-main']/ul[2]/li/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, 'loggUt.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//ul[2]/li/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Logg ut')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "377bef56-9dce-4ea8-85c1-bc5134d7341b",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return window.location.href",
+          "targets": [],
+          "value": "pageurl"
+        },
+        {
+          "id": "28245d35-4ad8-4c92-a573-afc34e59fea9",
+          "comment": "",
+          "command": "assert",
+          "target": "pageurl",
+          "targets": [],
+          "value": "http://localhost:8080/loggInn.html"
+        }
+      ]
+    },
+    {
+      "id": "789f0e87-532f-415f-b2a8-2a970cc6e29d",
+      "name": "Endre Kunde Admin",
+      "commands": [
+        {
+          "id": "15172945-91a8-4347-a42f-4b35e3e93bfd",
+          "comment": "",
+          "command": "open",
+          "target": "http://localhost:8080/index.html",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "80491a5a-f698-476b-8fe7-d733417f76ec",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1440x875",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "78e25cd9-4677-475f-9b07-62b34767388e",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Logg inn Admin",
+          "targets": [
+            [
+              "linkText=Logg inn Admin",
+              "linkText"
+            ],
+            [
+              "css=.btn-default",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Logg inn Admin')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//a[contains(@href, 'loggInnAdmin.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//body/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Logg inn Admin')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "2cd17423-05df-4024-b226-10362af381e6",
+          "comment": "",
+          "command": "click",
+          "target": "id=bruker",
+          "targets": [
+            [
+              "id=bruker",
+              "id"
+            ],
+            [
+              "css=#bruker",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='bruker']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "dec5a2db-9ed0-4e0d-88c9-a413117018fb",
+          "comment": "",
+          "command": "type",
+          "target": "id=bruker",
+          "targets": [
+            [
+              "id=bruker",
+              "id"
+            ],
+            [
+              "css=#bruker",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='bruker']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Admin"
+        },
+        {
+          "id": "9876a1fc-741a-4fa5-a2c9-1f2ff3dc58a2",
+          "comment": "",
+          "command": "type",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Admin"
+        },
+        {
+          "id": "87518e76-c645-4fd5-bc2f-5559bfb6f1ac",
+          "comment": "",
+          "command": "sendKeys",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "${KEY_ENTER}"
+        },
+        {
+          "id": "81effb7c-8d09-4087-87cb-3aca948a0858",
+          "comment": "",
+          "command": "click",
+          "target": "id=fornavn1",
+          "targets": [
+            [
+              "id=fornavn1",
+              "id"
+            ],
+            [
+              "css=#fornavn1",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='fornavn1']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='listKunde']/table/tbody/tr/td[2]/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[2]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "ea56fd85-608d-421e-a691-d08b6c98c4bb",
+          "comment": "",
+          "command": "type",
+          "target": "id=fornavn1",
+          "targets": [
+            [
+              "id=fornavn1",
+              "id"
+            ],
+            [
+              "css=#fornavn1",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='fornavn1']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='listKunde']/table/tbody/tr/td[2]/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[2]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Lene1"
+        },
+        {
+          "id": "47e4fb41-9516-4d24-b470-75501eb875c2",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Endre",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1f0b2b68-f80b-4e87-b805-9aec2764f8bc",
+          "comment": "",
+          "command": "open",
+          "target": "/adminKunde.html",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "dbdf1986-4ef1-4380-ab00-5b4b9ba7d1d7",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=fornavn1",
+          "targets": [],
+          "value": "Lene1"
+        }
+      ]
+    },
+    {
+      "id": "477c3883-c2cd-47ea-bedf-3c12d60dbbd7",
+      "name": "Slett Kunde Admin",
+      "commands": [
+        {
+          "id": "33b25e74-6e28-43dc-b05d-459e77671f51",
+          "comment": "",
+          "command": "open",
+          "target": "/initDB",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ccfbf982-ee4a-4892-afd1-47d48be60d92",
+          "comment": "",
+          "command": "pause",
+          "target": "1000",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b76dbbc2-f370-4dd8-8664-2a5e805b42cb",
+          "comment": "",
+          "command": "open",
+          "target": "/index.html",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "72fc4c08-f48d-4f58-a6ed-003c712bea70",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Logg inn Admin",
+          "targets": [
+            [
+              "linkText=Logg inn Admin",
+              "linkText"
+            ],
+            [
+              "css=.btn-default",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Logg inn Admin')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//a[contains(@href, 'loggInnAdmin.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//body/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Logg inn Admin')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "482e28d0-958a-4e38-96c8-2f8d52fc53e4",
+          "comment": "",
+          "command": "click",
+          "target": "id=bruker",
+          "targets": [
+            [
+              "id=bruker",
+              "id"
+            ],
+            [
+              "css=#bruker",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='bruker']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "35130a23-a7fb-4269-bd1a-bd81e4219289",
+          "comment": "",
+          "command": "type",
+          "target": "id=bruker",
+          "targets": [
+            [
+              "id=bruker",
+              "id"
+            ],
+            [
+              "css=#bruker",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='bruker']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Admin"
+        },
+        {
+          "id": "759c30b1-1929-4876-97e7-9198abada06d",
+          "comment": "",
+          "command": "type",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Admin"
+        },
+        {
+          "id": "4af3e38b-64f8-4bde-8cf5-acb9f7fbf1d4",
+          "comment": "",
+          "command": "sendKeys",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "${KEY_ENTER}"
+        },
+        {
+          "id": "5cfd6aba-24e4-4724-b3e8-85c7b6fce069",
+          "comment": "",
+          "command": "chooseOkOnNextConfirmation",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5e3cd185-7150-4cc7-ac46-07ca379bb178",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Slett",
+          "targets": [
+            [
+              "linkText=Slett",
+              "linkText"
+            ],
+            [
+              "css=tr:nth-child(1) .btn-danger",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Slett')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//a[@onclick='slettKunde(1)']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='listKunde']/table/tbody/tr/td[10]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[10]/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Slett')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "f78d61dd-512d-4c56-b469-c406fc2c3ea6",
+          "comment": "",
+          "command": "webdriverChooseOkOnVisibleConfirmation",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d802c10c-ba43-4fc2-bfa3-afd72caba0e1",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=fornavn1",
+          "targets": [
+            [
+              "id=fornavn1",
+              "id"
+            ],
+            [
+              "css=#fornavn1",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='fornavn1']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='listKunde']/table/tbody/tr/td[2]/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[2]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Per"
+        }
+      ]
+    },
+    {
+      "id": "bd7f123f-76c9-4131-bb7e-16c424726f5a",
+      "name": "Registrer ny kunde admin",
+      "commands": [
+        {
+          "id": "3d189984-443f-4dd4-a7b5-694ec4f33af7",
+          "comment": "",
+          "command": "open",
+          "target": "/initDB",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "23e99e7c-4ecf-4534-ae39-f3fad432ab1e",
+          "comment": "",
+          "command": "pause",
+          "target": "1000",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a4e7f793-e706-477a-9fb6-5fcb6f44a31e",
+          "comment": "",
+          "command": "open",
+          "target": "http://localhost:8080/index.html",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e742701f-0d03-47d4-a261-4feefaba8e97",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1280x1415",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "dc018cca-831d-4685-8151-0860e7df79d5",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Logg inn Admin",
+          "targets": [
+            [
+              "linkText=Logg inn Admin",
+              "linkText"
+            ],
+            [
+              "css=.btn-default",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Logg inn Admin')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//a[contains(@href, 'loggInnAdmin.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//body/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Logg inn Admin')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "9f31054c-6319-424b-9ca6-c79b44620146",
+          "comment": "",
+          "command": "click",
+          "target": "id=bruker",
+          "targets": [
+            [
+              "id=bruker",
+              "id"
+            ],
+            [
+              "css=#bruker",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='bruker']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "e24d5a3c-5e87-442c-bf20-07d30c585a36",
+          "comment": "",
+          "command": "type",
+          "target": "id=bruker",
+          "targets": [
+            [
+              "id=bruker",
+              "id"
+            ],
+            [
+              "css=#bruker",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='bruker']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Admin"
+        },
+        {
+          "id": "27fc3713-af26-4d99-ac02-1e3bd2e76f48",
+          "comment": "",
+          "command": "type",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Admin"
+        },
+        {
+          "id": "00609fed-e6d7-49ba-82ad-0e7496555da7",
+          "comment": "",
+          "command": "click",
+          "target": "css=form",
+          "targets": [
+            [
+              "css=form",
+              "css:finder"
+            ],
+            [
+              "xpath=//form",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "0664fc2f-e90a-475c-9838-9140c3a0f926",
+          "comment": "",
+          "command": "click",
+          "target": "id=loggInn",
+          "targets": [
+            [
+              "id=loggInn",
+              "id"
+            ],
+            [
+              "css=#loggInn",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='loggInn']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//form/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "ee297e84-f36f-494e-81eb-8c954ac93b92",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Registrer kunde",
+          "targets": [
+            [
+              "linkText=Registrer kunde",
+              "linkText"
+            ],
+            [
+              "css=.nav:nth-child(1) > li:nth-child(1) > a",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Registrer kunde')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='navbar-main']/ul/li/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, 'adminRegisterKunde.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Registrer kunde')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "88282597-0282-4ef4-89aa-8bff07807c67",
+          "comment": "",
+          "command": "click",
+          "target": "id=personnummer",
+          "targets": [
+            [
+              "id=personnummer",
+              "id"
+            ],
+            [
+              "css=#personnummer",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personnummer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "a84ecb77-8d52-48dd-82ef-3bd88798c3cb",
+          "comment": "",
+          "command": "type",
+          "target": "id=personnummer",
+          "targets": [
+            [
+              "id=personnummer",
+              "id"
+            ],
+            [
+              "css=#personnummer",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personnummer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "01010112345"
+        },
+        {
+          "id": "2eb3e8df-5998-45c0-8216-61dcd31ee070",
+          "comment": "",
+          "command": "click",
+          "target": "id=fornavn",
+          "targets": [
+            [
+              "id=fornavn",
+              "id"
+            ],
+            [
+              "css=#fornavn",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='fornavn']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "544f3860-e62e-42d7-9309-de3efb2b68ba",
+          "comment": "",
+          "command": "type",
+          "target": "id=fornavn",
+          "targets": [
+            [
+              "id=fornavn",
+              "id"
+            ],
+            [
+              "css=#fornavn",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='fornavn']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "John"
+        },
+        {
+          "id": "5d7e96d0-7198-4d5a-a999-9851c9c92857",
+          "comment": "",
+          "command": "click",
+          "target": "id=etternavn",
+          "targets": [
+            [
+              "id=etternavn",
+              "id"
+            ],
+            [
+              "css=#etternavn",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='etternavn']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[3]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "adffeaba-791e-4b20-b7e1-a3beaa6d6ba2",
+          "comment": "",
+          "command": "type",
+          "target": "id=etternavn",
+          "targets": [
+            [
+              "id=etternavn",
+              "id"
+            ],
+            [
+              "css=#etternavn",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='etternavn']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[3]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Doe"
+        },
+        {
+          "id": "e0a40379-6b0c-4b11-97c4-57d1944ae411",
+          "comment": "",
+          "command": "type",
+          "target": "id=adresse",
+          "targets": [
+            [
+              "id=adresse",
+              "id"
+            ],
+            [
+              "css=#adresse",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='adresse']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[4]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Osloveien 4"
+        },
+        {
+          "id": "66c56c26-082f-4205-9fc5-543c09dcfe8d",
+          "comment": "",
+          "command": "type",
+          "target": "id=postnr",
+          "targets": [
+            [
+              "id=postnr",
+              "id"
+            ],
+            [
+              "css=#postnr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='postnr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[5]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "0368"
+        },
+        {
+          "id": "f7e2c0f9-df27-4076-bc21-115c7f300da8",
+          "comment": "",
+          "command": "type",
+          "target": "id=poststed",
+          "targets": [
+            [
+              "id=poststed",
+              "id"
+            ],
+            [
+              "css=#poststed",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='poststed']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[6]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Oslo"
+        },
+        {
+          "id": "cd4440a8-b762-4d4e-a1b0-3d665e17e5dc",
+          "comment": "",
+          "command": "type",
+          "target": "id=telefonnr",
+          "targets": [
+            [
+              "id=telefonnr",
+              "id"
+            ],
+            [
+              "css=#telefonnr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='telefonnr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[7]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "00000000"
+        },
+        {
+          "id": "88e778a1-f0c6-4cc1-991c-cc741e8dc677",
+          "comment": "",
+          "command": "type",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[8]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Test123"
+        },
+        {
+          "id": "b640b717-5e8a-4523-829a-8898a1ed56ff",
+          "comment": "",
+          "command": "click",
+          "target": "id=regKunde",
+          "targets": [
+            [
+              "id=regKunde",
+              "id"
+            ],
+            [
+              "css=#regKunde",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='regKunde']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Registrer kunde')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "be241ba0-4fd0-4dfb-ae6e-1f1f71d07435",
+          "comment": "",
+          "command": "open",
+          "target": "/adminKunde.html",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "14e9c089-bf25-47d1-83bd-e331d3dbbebf",
+          "comment": "",
+          "command": "assertElementPresent",
+          "target": "id=fornavn3",
+          "targets": [
+            [
+              "id=fornavn1",
+              "id"
+            ],
+            [
+              "css=#fornavn1",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='fornavn1']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='listKunde']/table/tbody/tr/td[2]/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[2]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "a72ce28a-5fd1-4e56-80a4-7c1308aa4411",
+      "name": "Register konto admin",
+      "commands": [
+        {
+          "id": "b86bafb4-b148-40f9-af70-bc3d68708d1e",
+          "comment": "",
+          "command": "open",
+          "target": "http://localhost:8080/index.html",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "12a53d95-5abc-4433-a945-cccb83de80a7",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1440x875",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a6f6705d-0d1a-43e7-92c6-79c10720cdef",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Logg inn Admin",
+          "targets": [
+            [
+              "linkText=Logg inn Admin",
+              "linkText"
+            ],
+            [
+              "css=.btn-default",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Logg inn Admin')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//a[contains(@href, 'loggInnAdmin.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//body/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Logg inn Admin')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "39e891c6-e4fc-43a2-9a55-a6755ba4afeb",
+          "comment": "",
+          "command": "click",
+          "target": "id=bruker",
+          "targets": [
+            [
+              "id=bruker",
+              "id"
+            ],
+            [
+              "css=#bruker",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='bruker']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "947ffafa-e010-4b1a-a8eb-40f98ada415c",
+          "comment": "",
+          "command": "type",
+          "target": "id=bruker",
+          "targets": [
+            [
+              "id=bruker",
+              "id"
+            ],
+            [
+              "css=#bruker",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='bruker']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Admin"
+        },
+        {
+          "id": "7bcf01ee-14de-4f42-8593-b56bff55c3f0",
+          "comment": "",
+          "command": "type",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Admin"
+        },
+        {
+          "id": "316d4d3e-3205-444f-89b1-ab0da9f3df5d",
+          "comment": "",
+          "command": "sendKeys",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "${KEY_ENTER}"
+        },
+        {
+          "id": "311489d1-dcb8-491a-9a73-fb3284a026b4",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Register konto",
+          "targets": [
+            [
+              "linkText=Register konto",
+              "linkText"
+            ],
+            [
+              "css=li:nth-child(3) > a",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Register konto')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='navbar-main']/ul/li[3]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, 'adminRegisterKonto.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li[3]/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Register konto')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "f8707732-1c43-43eb-b877-685853e35681",
+          "comment": "",
+          "command": "click",
+          "target": "id=kontoNr",
+          "targets": [
+            [
+              "id=kontoNr",
+              "id"
+            ],
+            [
+              "css=#kontoNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='kontoNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "80912a5f-62e0-4f69-963a-77d12d8a20b7",
+          "comment": "",
+          "command": "type",
+          "target": "id=kontoNr",
+          "targets": [
+            [
+              "id=kontoNr",
+              "id"
+            ],
+            [
+              "css=#kontoNr",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='kontoNr']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "11111111111"
+        },
+        {
+          "id": "392c1278-6ede-4068-a5f0-eccb7b313914",
+          "comment": "",
+          "command": "type",
+          "target": "id=type",
+          "targets": [
+            [
+              "id=type",
+              "id"
+            ],
+            [
+              "css=#type",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='type']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Brukskonto"
+        },
+        {
+          "id": "e2a8c1a5-0964-4e46-a5c1-3468215432ef",
+          "comment": "",
+          "command": "type",
+          "target": "id=valuta",
+          "targets": [
+            [
+              "id=valuta",
+              "id"
+            ],
+            [
+              "css=#valuta",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='valuta']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[3]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "NOK"
+        },
+        {
+          "id": "012ff52b-56f1-4a06-8e8d-bd3db6152d34",
+          "comment": "",
+          "command": "type",
+          "target": "id=personnummer",
+          "targets": [
+            [
+              "id=personnummer",
+              "id"
+            ],
+            [
+              "css=#personnummer",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='personnummer']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[4]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "01010110523"
+        },
+        {
+          "id": "e4e953ae-1581-4c96-8f2d-16fc023ea98d",
+          "comment": "",
+          "command": "click",
+          "target": "id=regKonto",
+          "targets": [
+            [
+              "id=regKonto",
+              "id"
+            ],
+            [
+              "css=#regKonto",
+              "css:finder"
+            ],
+            [
+              "xpath=//button[@id='regKonto']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/button",
+              "xpath:position"
+            ],
+            [
+              "xpath=//button[contains(.,'Registrer konto')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "4ca19278-26a7-40ce-92c8-d29331b41511",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return window.location.pathname",
+          "targets": [],
+          "value": "pathname"
+        },
+        {
+          "id": "c98a506b-9a8a-4d88-a2dc-4f7bba19d2cd",
+          "comment": "",
+          "command": "assert",
+          "target": "pathname",
+          "targets": [],
+          "value": "/adminKunde.html"
+        }
+      ]
+    },
+    {
+      "id": "b600edf6-f9b4-4d1e-9886-e5c8f920cd4f",
+      "name": "Endre konto admin",
+      "commands": [
+        {
+          "id": "3439c8e5-44f9-41f7-b391-710ea87a8d32",
+          "comment": "",
+          "command": "open",
+          "target": "http://localhost:8080/index.html",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8d8eae73-ad25-4810-9e37-d156bd65fed3",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1440x875",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "55922e26-3982-456d-a155-f8d271709e25",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Logg inn Admin",
+          "targets": [
+            [
+              "linkText=Logg inn Admin",
+              "linkText"
+            ],
+            [
+              "css=.btn-default",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Logg inn Admin')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//a[contains(@href, 'loggInnAdmin.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//body/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Logg inn Admin')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "a82182bd-64f0-42a6-a386-5f2ee1130d2a",
+          "comment": "",
+          "command": "click",
+          "target": "id=bruker",
+          "targets": [
+            [
+              "id=bruker",
+              "id"
+            ],
+            [
+              "css=#bruker",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='bruker']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "fe2e36a0-bc5d-4299-9057-ff7a7e857d09",
+          "comment": "",
+          "command": "type",
+          "target": "id=bruker",
+          "targets": [
+            [
+              "id=bruker",
+              "id"
+            ],
+            [
+              "css=#bruker",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='bruker']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Admin"
+        },
+        {
+          "id": "1168f232-bcde-44ee-9e84-ffcd83176025",
+          "comment": "",
+          "command": "type",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Admin"
+        },
+        {
+          "id": "22152de5-5b03-4442-b3dc-80535ac64dc4",
+          "comment": "",
+          "command": "click",
+          "target": "id=loggInn",
+          "targets": [
+            [
+              "id=loggInn",
+              "id"
+            ],
+            [
+              "css=#loggInn",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='loggInn']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//form/input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "e65614c9-b319-40ec-8d33-e8ddea5ff907",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Endre konto",
+          "targets": [
+            [
+              "linkText=Endre konto",
+              "linkText"
+            ],
+            [
+              "css=li:nth-child(4) > a",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Endre konto')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='navbar-main']/ul/li[4]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, 'adminEndreKonto.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li[4]/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Endre konto')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d5a5e6e0-5b95-40f3-b55c-8a81a5bcf239",
+          "comment": "",
+          "command": "click",
+          "target": "css=tbody > tr:nth-child(1)",
+          "targets": [
+            [
+              "css=tbody > tr:nth-child(1)",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[@id='endreKonto']/table/tbody/tr",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//tbody/tr",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "871f5020-b4e2-44b4-9adb-8be63d0c4997",
+          "comment": "",
+          "command": "type",
+          "target": "id=saldo1",
+          "targets": [
+            [
+              "id=saldo1",
+              "id"
+            ],
+            [
+              "css=#saldo1",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='saldo1']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='endreKonto']/table/tbody/tr/td[2]/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[2]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "300.00"
+        },
+        {
+          "id": "9ef22d1d-dfb1-451a-a45d-1133cee236a6",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Endre",
+          "targets": [
+            [
+              "linkText=Endre",
+              "linkText"
+            ],
+            [
+              "css=tr:nth-child(1) .btn-success",
+              "css:finder"
+            ],
+            [
+              "xpath=(//a[contains(text(),'Endre')])[3]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//a[@onclick='endreKonto(1)']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='endreKonto']/table/tbody/tr/td[6]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[6]/a",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "92168514-63fc-4fb3-bc69-f1f6a3c2c932",
+          "comment": "",
+          "command": "open",
+          "target": "/adminEndreKonto.html",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e3c652e0-9a53-484d-8883-83769c68a0ce",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=saldo1",
+          "targets": [],
+          "value": "300.00"
+        }
+      ]
+    },
+    {
+      "id": "2a2f359d-0632-45ba-b74b-4f24b5f5f42c",
+      "name": "Slett Konto admin",
+      "commands": [
+        {
+          "id": "da0c4718-36fb-45be-b9ff-fe56a305ff02",
+          "comment": "",
+          "command": "open",
+          "target": "/initDB",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0c7e6105-ab7f-49ff-b046-6c552d4a91b0",
+          "comment": "",
+          "command": "pause",
+          "target": "1000",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "53af0555-5393-4221-ad0a-6eff0a1443e0",
+          "comment": "",
+          "command": "open",
+          "target": "http://localhost:8080/index.html",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6fa9ba2e-71c2-4d24-95f8-ee15ee74ac7d",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1440x875",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0a367cdf-ea3a-480c-a59d-d69abab8afd3",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Logg inn Admin",
+          "targets": [
+            [
+              "linkText=Logg inn Admin",
+              "linkText"
+            ],
+            [
+              "css=.btn-default",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Logg inn Admin')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//a[contains(@href, 'loggInnAdmin.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//body/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Logg inn Admin')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "b99f8555-5ffa-4745-aed1-9ed90fec320d",
+          "comment": "",
+          "command": "click",
+          "target": "id=bruker",
+          "targets": [
+            [
+              "id=bruker",
+              "id"
+            ],
+            [
+              "css=#bruker",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='bruker']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "ec622590-7b59-4dee-b855-5b7eaf7b1899",
+          "comment": "",
+          "command": "type",
+          "target": "id=bruker",
+          "targets": [
+            [
+              "id=bruker",
+              "id"
+            ],
+            [
+              "css=#bruker",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='bruker']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Admin"
+        },
+        {
+          "id": "58bc1862-e36e-4408-aa84-491fba2dc38c",
+          "comment": "",
+          "command": "type",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "Admin"
+        },
+        {
+          "id": "1fdcd6c4-fb1d-4043-bf68-387f718d3daa",
+          "comment": "",
+          "command": "sendKeys",
+          "target": "id=passord",
+          "targets": [
+            [
+              "id=passord",
+              "id"
+            ],
+            [
+              "css=#passord",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='passord']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[2]/div/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "${KEY_ENTER}"
+        },
+        {
+          "id": "4c9a80bb-6c0f-4175-8753-1f826121ad05",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Endre konto",
+          "targets": [
+            [
+              "linkText=Endre konto",
+              "linkText"
+            ],
+            [
+              "css=li:nth-child(4) > a",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Endre konto')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//div[@id='navbar-main']/ul/li[4]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//a[contains(@href, 'adminEndreKonto.html')]",
+              "xpath:href"
+            ],
+            [
+              "xpath=//li[4]/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Endre konto')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "1bc3c0d0-2e53-41b4-9e76-f8a202f81612",
+          "comment": "",
+          "command": "chooseOkOnNextConfirmation",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "721c105a-5793-49b6-9ded-da25dfc653ab",
+          "comment": "",
+          "command": "click",
+          "target": "linkText=Slett",
+          "targets": [
+            [
+              "linkText=Slett",
+              "linkText"
+            ],
+            [
+              "css=tr:nth-child(1) .btn-danger",
+              "css:finder"
+            ],
+            [
+              "xpath=//a[contains(text(),'Slett')]",
+              "xpath:link"
+            ],
+            [
+              "xpath=//a[@onclick='slettKonto(1)']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='endreKonto']/table/tbody/tr/td[7]/a",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[7]/a",
+              "xpath:position"
+            ],
+            [
+              "xpath=//a[contains(.,'Slett')]",
+              "xpath:innerText"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "92f346af-0f27-406d-9829-5365669d7672",
+          "comment": "",
+          "command": "webdriverChooseOkOnVisibleConfirmation",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c721da6c-b8a7-42fb-9891-f9de7ad2d17c",
+          "comment": "",
+          "command": "assertValue",
+          "target": "id=saldo1",
+          "targets": [
+            [
+              "id=saldo1",
+              "id"
+            ],
+            [
+              "css=#saldo1",
+              "css:finder"
+            ],
+            [
+              "xpath=//input[@id='saldo1']",
+              "xpath:attributes"
+            ],
+            [
+              "xpath=//div[@id='endreKonto']/table/tbody/tr/td[2]/input",
+              "xpath:idRelative"
+            ],
+            [
+              "xpath=//td[2]/input",
+              "xpath:position"
+            ]
+          ],
+          "value": "100500.00"
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "a18f4a36-eee3-40c6-8741-678f5aa4a10c",
+      "name": "1: Som en kunde vil jeg kunne logge inn",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "22bffd60-6c84-48da-b945-7f640bcd0c31",
+        "e9115d8b-ab79-48cb-8e98-a757a860855a"
+      ]
+    },
+    {
+      "id": "f65711b4-04e8-4dc9-bda3-14612606526d",
+      "name": "6: Som kunde vil jeg kunne se konto oversikt",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "9d4ad650-0f80-4ea9-97f4-8ed189926d9e"
+      ]
+    },
+    {
+      "id": "26f239ef-946e-4c90-81ad-fa2291b9be77",
+      "name": "8: Som kunde vil jeg kunne se registrere betalinger",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "89abad54-d854-40a7-8400-ea932ac81d15"
+      ]
+    },
+    {
+      "id": "2e85c2dd-2fa1-4a3d-bdc7-e1d71eb9df19",
+      "name": "7: Som kunde vil jeg kunne registrere betalinger",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "a08b40a1-bbfa-4492-add4-2dfd13806af5"
+      ]
+    },
+    {
+      "id": "0cba2697-1dec-4403-a3d0-cfc7c8349066",
+      "name": "9: Som kunde vil jeg utføre en registrert betaling",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "67974ff7-80c9-41ee-9c87-91d563872821"
+      ]
+    },
+    {
+      "id": "bb8ad8e6-60ef-4a4d-9085-2d6fedb007dc",
+      "name": "10 : Som kunde vil jeg kunne se oversikt over utførte transaksjoner",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "b2dc6db7-1b80-46b9-a44a-0a0ebbb36c0c"
+      ]
+    },
+    {
+      "id": "1ecffa18-bfde-412b-98ca-6707c9111325",
+      "name": "11 : Som kunde vil jeg kunne se og endre min kunde informasjon",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "4d48ff73-339a-480a-9a5f-df4b4fb3589f"
+      ]
+    },
+    {
+      "id": "442b2ae6-fe05-4921-8f9d-306b93e45f7c",
+      "name": "5: Logg Inn Admin",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "f2d5d808-db0d-417f-be81-ea5ac27b3118",
+        "658027e8-c4d8-4e87-a53c-beb1dc461f27"
+      ]
+    },
+    {
+      "id": "4c70362d-f3b1-4c72-a442-b02f83b323d8",
+      "name": "12: Endre, slette kunde admin",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "789f0e87-532f-415f-b2a8-2a970cc6e29d",
+        "477c3883-c2cd-47ea-bedf-3c12d60dbbd7"
+      ]
+    },
+    {
+      "id": "92560f07-6e65-47f7-888b-1c81fc272078",
+      "name": "13: Registere ny kunde admin",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "bd7f123f-76c9-4131-bb7e-16c424726f5a"
+      ]
+    },
+    {
+      "id": "5aa58d9a-6c0d-4043-b18d-23d6db4f3a07",
+      "name": "14: Register ny konto admin",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "a72ce28a-5fd1-4e56-80a4-7c1308aa4411"
+      ]
+    },
+    {
+      "id": "c4d5ccac-6d64-4a90-ad0d-40dd956eea96",
+      "name": "15: Endre slette konto admin",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "2a2f359d-0632-45ba-b74b-4f24b5f5f42c",
+        "b600edf6-f9b4-4d1e-9886-e5c8f920cd4f"
+      ]
+    }
+  ],
+  "urls": [
+    "http://localhost:8080/",
+    "http://localhost:8080/Index.html",
+    "http://localhost:8080/index.html"
+  ],
+  "plugins": []
+}
