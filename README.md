@@ -15,6 +15,7 @@
 ### SoapUI - Intergration tests
 
 [SoapUI Test File](./NettbankIntegrasjonsTest.xml)
+[Interactive Test Report](https://nett-bank.vercel.app/)
 
 ### Selenium - E2E test
 
