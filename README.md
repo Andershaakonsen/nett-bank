@@ -6,8 +6,10 @@ Tech-stack
 
 ## JUnit - Unit test
 
-[src/test/java/oslomet/testing]
+[Testing Mappe](./src/test/java/oslomet/testing/)
 
 ## SoapUI - Intergration tests
 
 ## Selenium - E2E test
+
+[Nettbank systemtest](./nettbank-systemtest.side)
