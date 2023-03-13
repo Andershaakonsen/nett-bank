@@ -1,6 +1,7 @@
 # ADTS2310 Testing av nettbank
 
 Tech-stack
+
 **Frontend**: jQuery
 
 **Backend**: Spring Boot Java
